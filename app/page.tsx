@@ -14,4 +14,8 @@ export default function Home() {
     console.log("widgetType", widgetType);
     setWidgets([...widgets, widgetType]);
   }
+
+  function handleDragOver(e: React.DragEvent) {
+    e.preventDefault();
+  }
 }
